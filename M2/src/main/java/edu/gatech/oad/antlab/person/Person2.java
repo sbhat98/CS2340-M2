@@ -1,11 +1,13 @@
 package edu.gatech.oad.antlab.person;
-
+import java.util.List;
+import java.util.Collections;
+import java.util.Arrays;
 /**
  *  A simple class for person 2
  *  returns their name and a
  *  modified string 
  *
- * @author Bob
+ * @author Rohit Mittapalli
  * @version 1.1
  */
 public class Person2 {
@@ -31,7 +33,13 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+	  String s = "";	
+	  List<String> characters = Arrays.asList(input.split(""));
+	  Collections.shuffle(characters);
+	  for (String c : characters) {
+	    s += c;
+	  }
+	  return s;	  
 	}
 	/**
 	 * Return a string rep of this object
