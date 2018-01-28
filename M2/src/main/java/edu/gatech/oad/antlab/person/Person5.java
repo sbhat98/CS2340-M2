@@ -19,7 +19,7 @@ public class Person5 {
   public Person5(String pname) {
     name = pname;
   }
-  	/**
+   /**
 	 * This method should take the string
 	 * input and return its characters rotated
 	 * 2 positions.
@@ -33,8 +33,6 @@ public class Person5 {
 	  //Person 5 put your implementation here
         int i = 2 % input.length();
         return input.substring(i) + input.substring(0, i);
-      }
-      return null;
 	}
 	
 	/**
